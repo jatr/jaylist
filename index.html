@@ -9,7 +9,18 @@
     <a href="http://github.com/benbscholz/jaylist"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://d3nwyuy0nl342s.cloudfront.net/img/c641758e06304bc53ae7f633269018169e7e5851/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f77686974655f6666666666662e706e67" alt="Fork me on GitHub"></a>
     <header>jaylist</header>
     <p>a simple javascript hashtable.</p>
-    <p><a href="http://benbscholz.github.com/list.html">annotated source code</a></p>
-    <p><a href="http://github.com/benbscholz/jaylist">github repository</a></p>
+    <div id="usage">
+        <p>create a list:</p>
+        <code>var jaylist = new List();</code>
+        <p>add to the list:</p>
+        <code>jaylist.add("this", 342);</code>
+        <p>get a value from the list:</p>
+        <code>jaylist.get("this"); // returns 342</code>
+        <p>overwrite a value in the list:</p>
+        <code>jaylist.add("this", 0);<br >jaylist.get("this"); // returns 0</code>
+        <p>remove a value from the list:</p>
+        <code>jaylist.remove("this");</code>
+    </div>
+    <p><a href="https://github.com/benbscholz/jaylist">download.</a></p>
 </body>
 </html>
