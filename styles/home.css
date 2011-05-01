@@ -142,9 +142,14 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
   src: url(League-Gothic.otf);
 }
  
+@font-face {
+  font-family: Junction;
+  src: url(Junction.otf);
+}
+ 
 body { 
 	font-family: League, Helvetica, sans-serif; 
-	background: #312722;
+	background: hsl(20, 18%, 16%);
 }
 
 header{
@@ -170,4 +175,26 @@ a {
 
 a:hover {
 	color: #060606;
+}
+
+#usage p {
+	width: 500px;
+	margin: 5px auto 5px auto;
+	font-family: Junction;
+	text-align: left;
+	font-size: 2em;
+	color: hsl(40, 40%, 80%);
+}
+
+#usage code {
+	width: 500px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 3px;
+	background-color: hsl(20, 18%, 40%);
+	font-size: 1.5em;
+	-moz-border-radius: 2px; /* FF1+ */
+	-webkit-border-radius: 2px; /* Saf3-4, iOS 1+, Android 1.5+ */
+	border-radius: 2px; /* Opera 10.5, IE9, Saf5, Chrome, FF4 */
 }
