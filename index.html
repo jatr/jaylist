@@ -1,38 +1,90 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en" class="no-js">
 <head>
-  <meta http-equiv="content-type" content="text/html;charset=utf-8">
-  <title>jaylist -- a javascript hashtable</title>
-  <link rel="stylesheet" href="styles/home.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>jaylist -- a small & simple javascript list</title>
+	<meta name="description" content="jaylist is a small --less than 1kb-- wrapper for javascript's built-in hash storage. It provides most of the functionality of Python's dictionary.">
+	<meta name="author" content="Ben Brooks Scholz">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="stylesheet" href="css/style.css?v=2">
+
+	<script src="js/libs/modernizr-1.7.min.js"></script>
 </head>
 <body>
-    <a href="http://github.com/benbscholz/jaylist"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://d3nwyuy0nl342s.cloudfront.net/img/c641758e06304bc53ae7f633269018169e7e5851/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f77686974655f6666666666662e706e67" alt="Fork me on GitHub"></a>
-    <header>jaylist</header>
-    <p>a simple wrapper for javascript's hash storage.</p>
-    <div id="usage">
-        <p>create a list:</p>
-        <code>var jaylist = new List();</code>
-        <p>add to the list:</p>
-        <code>jaylist.add("this", 342);</code>
-        <p>get a value from the list:</p>
-        <code>jaylist.get("this"); // returns 342</code>
-        <p>overwrite a value in the list:</p>
-        <code>jaylist.add("this", 0);<br >jaylist.get("this"); // returns 0</code>
-        <p>remove a value from the list:</p>
-        <code>jaylist.remove("this");</code>
-        <p>get the keys from the list:</p>
-        <code>var keys = jaylist.keys();</code>
-        <p>get the values from the list:</p>
-        <code>var values = jaylist.values();</code>
-        <p>get the length of the list:</p>
-        <code>jaylist.len();</code>
-        <p>Clear the values from the list:</p>
-        <code>jaylist.clear();</code>
-        <p>Check if the list contains the key:</p>
-        <code>jaylist.hasKey();</code>
-        <p>Pop a key off of the list:</p>
-        <code>jaylist.pop("that");</code>
-    </div>
-    <p><a href="https://github.com/benbscholz/jaylist">downloads</a></p>
+	<div id="container">
+		<header>
+            <h1>jaylist</h1>
+            <h2>a simple wrapper for Javascript's built-in hash storage</h2>
+		</header>
+        <div><a id="down" href="https://github.com/benbscholz/jaylist/archives/master"><p id="text">DOWNLOAD</p><p>size: 919kb minified</p></a></div>
+        <div id="wrapper">
+            <div id="main" rol="main">
+                <div id="getstarted">
+                    <h3>Getting started:</h3>
+                    <section>
+                        <p>Create a list:</p>
+                        <code>var jaylist = new List();</code>
+                        <p>Add some keys & values:</p>
+                        <code>jaylist.add('this', 42);</code>
+                        <code>jaylist.add('that', 'red');</code>
+                        <code>jaylist.add('other', 2.7);</code>
+                        <code>jaylist.add('thing', ['arrays', 'as', 'values']);</code>
+                        <p>Get a value (42) via its key:</p>
+                        <code>var val = jaylist.get('this');</code>
+                        <p>Remove a key-value pair:</p>
+                        <code>jaylist.remove('this');</code>
+                    </section>
+                </div>
+                <div id="about">
+                    <h3>About jaylist</h3>
+                    <section>
+                        <p>By extending Javascript's built in hash storage, jaylist provides functions to manipulate an associative array. It accepts keys of any hashable type and associates them with any value. jaylist and its functions were inspired by Python's dictionary type. It is designed to be small (<1kb) and easy to use.</p>
+                    </section>
+                    <a href="http://github.com/benbscholz/jaylist">fork me on github</a>
+                </div>
+            </div>
+		</div>
+        <div id="functions">
+            <header>
+                <h2>More Functions:</h2>
+            </header>
+            <section>
+                <div id="aux">
+                    <p>Get the keys in the list:</p> 
+                    <code>var keys = jaylist.keys();</code> 
+                    <code>keys === ['that', 'other', 'thing']</code> 
+                    <p>Get the values in the list:</p> 
+                    <code>var vals = jaylist.values();</code> 
+                    <code>vals === ['red', 2.7, ['arrays', 'as', 'values']]</code> 
+                    <p>Get the length of the list:</p> 
+                    <code>var len = jaylist.len();</code> 
+                    <code>len === 3</code>
+                </div>
+                <div id="more">
+                    <p>Check if the list contains the key:</p> 
+                    <code>var bool = jaylist.hasKey('this');</code> 
+                    <code>bool === false</code> 
+                    <p>Pop the key from the list:</p> 
+                    <code>var value = jaylist.pop('that');</code> 
+                    <code>value === 'red'</code> 
+                    <p>Pop an item from the list:</p> 
+                    <code>var pair = jaylist.popItem('thing');</code> 
+                    <code>pair === ['thing', ['arrays', 'as', 'values']]</code> 
+                </div>
+            </section>
+        </div>
+		<footer>
+            <a id="copy">ben brooks scholz &copy;</a>
+		</footer>
+	</div>
+
+	<script src="js/plugins.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>
