@@ -97,7 +97,13 @@
                     <code>value === 'red'</code> 
                     <p>Pop an item from the list:</p> 
                     <code>var pair = jaylist.popItem('thing');</code> 
-                    <code>pair === ['thing', ['arrays', 'as', 'values']]</code> 
+                    <code>pair === ['thing', ['arrays', 'as', 'values']]</code>
+                    <p>Update the list with another list:</p> 
+                    <code>var alist = new List();</code> 
+                    <code>alist.add("mine", 100);</code> 
+                    <code>alist.add("yours", 0);</code> 
+                    <code>jaylist.update(alist);</code> 
+                    <code>jaylist.keys() === [2.7, "mine", "yours"]</code> 
             </section>
             <section id="social">
             <div id="repo">            
