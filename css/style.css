@@ -356,12 +356,6 @@ code {
     margin-top: 15px;
 }
 
-#copy {
-    float: right;
-    margin-top: 285px;
-    color: #000;
-}
-
 .tweet, .query {
   font-family: Georgia, serif;
   font-size: 120%;
