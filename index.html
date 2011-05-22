@@ -1,5 +1,4 @@
 <!doctype html>
-<html lang="en" class="no-js">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -11,11 +10,26 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<link rel="shortcut icon" href="/favicon.ico">
-	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-	<link rel="stylesheet" href="css/style.css?v=2">
-
-	<script src="js/libs/modernizr-1.7.min.js"></script>
-    <script type="text/javascript">
+	<link rel="stylesheet" href="css/style.css">
+	<script language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js" type="text/javascript"></script>
+<script language="javascript" src="src/lib/jquery.tweet.js" type="text/javascript"></script>
+    <script type='text/javascript'>
+    $(document).ready(function(){
+        $(".tweet").tweet({
+            username: "jaylistjs",
+            join_text: "auto",
+            avatar_size: 32,
+            count: 1,
+            auto_join_text_default: "--", 
+            auto_join_text_ed: "--",
+            auto_join_text_ing: "--",
+            auto_join_text_reply: "--",
+            auto_join_text_url: "--",
+            loading_text: "loading tweets..."
+        });
+    });
+    </script>
+        <script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-22784247-2']);
@@ -27,48 +41,45 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
-</script>
+    </script>
 </head>
 <body>
 	<div id="container">
 		<header>
-            <h1>jaylist</h1>
-            <h2>a simple wrapper for Javascript's built-in hash storage</h2>
+		    <h1>JAYLIST</h1>
+		    <h2>A SIMPLE KEY-VALUE LIST BASED ON JAVASCRIPT's BUILT-IN HASH STORAGE</h2>
+		    <a href="http://github.com/benbscholz/jaylist/archives/master/"><div class="rectangle"><h2>DOWNLOAD</h2><h3>SIZE: 404B MINIFIED & GZIPPED</h3></div></a>
+            <div class="triangle-r"></div>
 		</header>
-        <div><a id="down" href="https://github.com/benbscholz/jaylist/archives/master"><p id="text">DOWNLOAD</p><p>size: 404b minified &amp; gzipped</p></a></div>
-        <div id="wrapper">
-            <div id="main" rol="main">
-                <div id="getstarted">
-                    <h3>Getting started:</h3>
-                    <section>
-                        <p>Create a list:</p>
-                        <code>var jaylist = new List();</code>
-                        <p>Add some keys & values:</p>
-                        <code>jaylist.add('this', 42);</code>
-                        <code>jaylist.add('that', 'red');</code>
-                        <code>jaylist.add('other', 2.7);</code>
-                        <code>jaylist.add('thing', ['arrays', 'as', 'values']);</code>
-                        <p>Get a value (42) via its key:</p>
-                        <code>var val = jaylist.get('this');</code>
-                        <p>Remove a key-value pair:</p>
-                        <code>jaylist.remove('this');</code>
-                    </section>
-                </div>
-                <div id="about">
-                    <h3>About jaylist</h3>
-                    <section>
-                        <p>By extending Javascript's built in hash storage, jaylist provides functions to manipulate an associative array. It accepts keys of any hashable type and associates them with any value. jaylist and its functions were inspired by Python's dictionary type. It is designed to be small (<1kb) and easy to use.</p>
-                    </section>
-                    <a href="http://github.com/benbscholz/jaylist">fork me on github</a>
-                </div>
+
+		<div id="main" role="main">
+            <div id="about">
+                <h3>about jaylist</h3>
+                <section>
+                    <p>By extending Javascript's built in hash storage, jaylist provides functions to manipulate an associative array. It accepts keys of any hashable type and associates them with any value. jaylist and its functions were inspired by Python's dictionary type. It is designed to be small (<1kb) and easy to use. Check out the github repository for the source code.</p>
+                </section>
+            </div>
+            <div id="getstarted">
+                <section>
+                    <p>create a list:</p>
+                    <code>var jaylist = new List();</code>
+                    <p>add some keys & values:</p>
+                    <code>jaylist.add('this', 42);</code>
+                    <code>jaylist.add('that', 'red');</code>
+                    <code>jaylist.add('other', 2.7);</code>
+                    <code>jaylist.add('thing', ['arrays', 'as', 'values']);</code>
+                    <p>get a value (42) via its key:</p>
+                    <code>var val = jaylist.get('this');</code>
+                    <p>remove a key-value pair:</p>
+                    <code>jaylist.remove('this');</code>
+                </section>
             </div>
 		</div>
-        <div id="functions">
+		<div id="api">
             <header>
-                <h2>More Functions:</h2>
+                <h2>more functions:</h2>
             </header>
-            <section>
-                <div id="aux">
+            <section id="func">
                     <p>Get the keys in the list:</p> 
                     <code>var keys = jaylist.keys();</code> 
                     <code>keys === ['that', 'other', 'thing']</code> 
@@ -78,8 +89,6 @@
                     <p>Get the length of the list:</p> 
                     <code>var len = jaylist.len();</code> 
                     <code>len === 3</code>
-                </div>
-                <div id="more">
                     <p>Check if the list contains the key:</p> 
                     <code>var bool = jaylist.hasKey('this');</code> 
                     <code>bool === false</code> 
@@ -89,15 +98,35 @@
                     <p>Pop an item from the list:</p> 
                     <code>var pair = jaylist.popItem('thing');</code> 
                     <code>pair === ['thing', ['arrays', 'as', 'values']]</code> 
-                </div>
+            </section>
+            <section id="social">
+            <div id="repo">            
+                <a href="http://github.com/benbscholz/jaylist">
+                    <img src="img/github.png"/>
+                    <span>github repository</span>
+                </a>
+            </div>
+            <div id="twitter">            
+                <a href="http://twitter.com/jaylistjs">
+                    <img src="img/twitter.png"/>
+                    <span id="twittertt">what's happening with jaylist</span>
+                </a>
+                <div class="tweet"></div>
+                <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="jaylistjs">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+            </div>
+            <footer>
+                <a id="copy">ben brooks scholz &copy; 2011</a>
+		    </footer>
             </section>
         </div>
-		<footer>
-            <a id="copy">ben brooks scholz &copy;</a>
-		</footer>
 	</div>
 
-	<script src="js/plugins.js"></script>
 	<script src="js/script.js"></script>
+	<script>
+		var _gaq=[['_setAccount','UA-22784247-2'],['_trackPageview']];
+		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
 </body>
 </html>
