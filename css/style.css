@@ -243,7 +243,7 @@ code {
 
 #api {
     width: 850px;
-    height: 700px;
+    height: 740px;
     margin-top: 284px;
     margin-right: auto;
     margin-left: auto;
@@ -259,32 +259,47 @@ code {
 #api h2 {
     margin: 10px 0 0 10px;
     font-size: 40px;
+    font-family: Ostrich, sans-serif;
+}
+
+#api h3 {
+    font-size: 20px;
     font-family: Times New Roman, serif;
     font-style: italic;
 }
 
-#func {
-    display: inline-block;
-    width: 400px;
-    padding: 10px;
-    margin-top: -10px;
-}
-
 #api code {
-    width: 400px;
+    width: 350px;
     background-color: #fff;
 	-moz-box-shadow: inset 0px 0px 3px #000; 
     -webkit-box-shadow: inset 0px 0px 3px #000; 
     box-shadow: inset 0px 0px 3px #000;
 }
 
-#social {
-    display: inline-block;
+#api section {
     width: 350px;
+    margin-left: 10px;
+    padding-bottom: 10px;
+}
+
+#destruction, #information {
+    float: right;
+    margin-right: 70px;
+}
+
+#destruction {
+    margin-top: -400px;
+}
+
+#information {
+    margin-top: -275px;
+}
+
+#social {
+    width: 360px;
     height: 275px;
     float: right;
-    margin-top: 18px;
-    margin-right: 35px;
+    margin-right: 70px;
     background-color: #774f38;
     -moz-background-clip: padding; 
     -webkit-background-clip: padding-box; 
