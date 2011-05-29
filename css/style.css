@@ -282,6 +282,10 @@ code {
     padding-bottom: 10px;
 }
 
+.return {
+    font-style: italic;
+}
+
 #destruction, #information {
     float: right;
     margin-right: 70px;
