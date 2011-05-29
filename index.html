@@ -113,13 +113,13 @@
                 <h3>Retrieval</h3>
                 <p>Get the keys in the list:</p> 
                 <code>var keys = jaylist.keys();</code> 
-                <code class="return">keys === ['key1', 'key2', 'key3']</code> 
+                <code class="return">keys === ['this', 'that', 'other']</code> 
                 <p>Get the values in the list:</p> 
                 <code>var vals = jaylist.values();</code> 
                 <code class="return">vals === ['red', 2.7, ['arrays', 'as', 'values']]</code>
                 <p>Get the key-value pairs in the list:</p>
                 <code>var pairs = jaylist.items();</code>
-                <code class="return">pairs === [['key1','red'],['key2',2.7],['key3',['arrays','as','values']]]</code>
+                <code class="return">pairs === [['this','red'],['that',2.7],['other',['arrays','as','values']]]</code>
                 <p>Pop the key from the list:</p> 
                 <code>var value = jaylist.pop('that');</code> 
                 <code class="return">value === 'red'</code> 
@@ -130,7 +130,7 @@
             <section id="destruction">
                 <h3>Destruction</h3>
                 <p>Remove a key-value pair from the list:</p>
-                <code>jaylist.remove(key1);</code>
+                <code>jaylist.remove('this');</code>
                 <p>Clear all key-value pairs from the list:</p>
                 <code>jaylist.clear();</code>
             </section>
