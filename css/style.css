@@ -380,6 +380,7 @@ code {
 
 g:plusone {
     margin-top: 15px;
+    margin-left: 10px;
 }
 
 .tweet, .query {
