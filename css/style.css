@@ -286,7 +286,7 @@ code {
     font-style: italic;
 }
 
-#destruction, #information {
+#destruction, #information, #iteration {
     float: right;
     margin-right: 70px;
 }
@@ -297,6 +297,10 @@ code {
 
 #information {
     margin-top: -275px;
+}
+
+#iteration {
+    margin-top: -150px;
 }
 
 #social {
