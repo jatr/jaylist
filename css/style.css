@@ -311,9 +311,9 @@ code {
     -moz-background-clip: padding; 
     -webkit-background-clip: padding-box; 
     background-clip: padding-box; 
-    -moz-box-shadow: inset 1px 1px 1px #000, inset -1px -1px 1px #000; 
-    -webkit-box-shadow: inset 1px 1px 1px #000, inset -1px -1px 1px #000;  
-    box-shadow: inset 1px 1px 1px #000, inset -1px -1px 1px #000; 
+    -moz-box-shadow: inset 1px 1px 1px #333, inset -1px -1px 1px #333; 
+    -webkit-box-shadow: inset 1px 1px 1px #333, inset -1px -1px 1px #333;  
+    box-shadow: inset 1px 1px 1px #333, inset -1px -1px 1px #333; 
     -moz-border-radius: 3px; 
     -webkit-border-radius: 3px; 
     border-radius: 3px;    
@@ -395,9 +395,9 @@ code {
     overflow-y: hidden;
     background-color: #e0e4cc; 
     border-bottom: solid 1px #e0e4cb;   
-    -moz-box-shadow: inset 1px 1px 3px #000, inset -1px -1px 3px #000; 
-    -webkit-box-shadow: inset 1px 1px 3px #000, inset -1px -1px 3px #000; 
-    box-shadow:inset 1px 1px 3px #000, inset -1px -1px 3px #000;  
+    -moz-box-shadow: 1px 1px 1px #333, -1px -1px 1px #333; 
+    -webkit-box-shadow: 1px 1px 1px #333, -1px -1px 1px #333; 
+    box-shadow: 1px 1px 1px #333, -1px -1px 1px #333;  
     -moz-border-radius: 3px; 
     -webkit-border-radius: 3px; 
     border-radius: 3px; 
