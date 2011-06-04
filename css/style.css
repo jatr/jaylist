@@ -399,6 +399,12 @@ code {
     -moz-box-shadow: inset 1px 1px 3px #000, inset -1px -1px 3px #000; 
     -webkit-box-shadow: inset 1px 1px 3px #000, inset -1px -1px 3px #000; 
     box-shadow:inset 1px 1px 3px #000, inset -1px -1px 3px #000;  
+    -moz-border-radius: 3px; 
+    -webkit-border-radius: 3px; 
+    border-radius: 3px; 
+    -moz-background-clip: padding; 
+    -webkit-background-clip: padding-box; 
+    background-clip: padding-box; 
 }
 
 .tweet .tweet_list .awesome, 
