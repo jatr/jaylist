@@ -126,9 +126,9 @@ header h2 {
 
 header h3 {
     margin-top: -8px;
-    margin-left: 7px;
+    margin-left: 5px;
     font-family: Ostrich, Arial, sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     color: #fff; 
     text-shadow: 1px 1px 1px #036;
 }
@@ -153,16 +153,15 @@ header a {
 
 .rectangle h2:hover {
     color: #000;
-    text-decoration: none;
 }
 
 .rectangle h2 {
+	padding-top: 30px;
+	margin-left: 5px;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	text-align: left;
 	font-size: 30px;
 	color: #fff;
-	padding-top: 30px;
-	margin-left: -90px;
-	text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
-	text-align: center;
 }
 
 .triangle-r {
@@ -312,9 +311,9 @@ code {
     -moz-background-clip: padding; 
     -webkit-background-clip: padding-box; 
     background-clip: padding-box; 
-    -moz-box-shadow: 1px 1px 1px #000, -1px -1px 1px #000; 
-    -webkit-box-shadow: 1px 1px 1px #000, -1px -1px 1px #000;  
-    box-shadow: 1px 1px 1px #000, -1px -1px 1px #000; 
+    -moz-box-shadow: inset 1px 1px 1px #000, inset -1px -1px 1px #000; 
+    -webkit-box-shadow: inset 1px 1px 1px #000, inset -1px -1px 1px #000;  
+    box-shadow: inset 1px 1px 1px #000, inset -1px -1px 1px #000; 
     -moz-border-radius: 3px; 
     -webkit-border-radius: 3px; 
     border-radius: 3px;    
