@@ -307,7 +307,7 @@ code {
     height: 275px;
     float: right;
     margin-right: 70px;
-    background-color: #774f38;
+    background-color: #A7DBD8;
     -moz-background-clip: padding; 
     -webkit-background-clip: padding-box; 
     background-clip: padding-box; 
@@ -343,7 +343,7 @@ code {
     margin-top: -1px;
     margin-right: 130px;
     float: right;
-    color: #e0e4cc;
+    color: #333;
     font-size: 30px;
     font-family: Ostrich, sans-serif, Arial;
 }
@@ -366,7 +366,7 @@ code {
     margin-top: -35px;
     margin-left: 59px;
     float: right;
-    color: #e0e4cc;
+    color: #333;
     font-size: 30px;
     font-family: Ostrich, sans-serif, Arial;
 }
