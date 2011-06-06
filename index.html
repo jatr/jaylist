@@ -122,7 +122,7 @@
                 <code class="return">vals === ['red', 2.7, ['arrays', 'as', 'values']]</code>
                 <p>Get the key-value pairs in the list:</p>
                 <code>var pairs = jaylist.items();</code>
-                <code class="return">pairs === [['this','red'],['that',2.7],['other',['arrays','as','values']]]</code>
+                <code class="return">pairs === [['this','red'],['that',2.7],['other', ['arrays','as','values']]]</code>
                 <p>Pop the key from the list:</p> 
                 <code>var value = jaylist.pop('that');</code> 
                 <code class="return">value === 'red'</code> 
@@ -148,7 +148,7 @@
             <section id="iteration">
                 <h3>Iteration</h3>
                 <p>Iterate through each entry, calling callback with parameter 'key':</p>
-                <code>jaylist.each(function(key){someFunction(key);});</code>
+                <code>jaylist.each(function(key){somefunc(key);});</code>
                 <p>Iterate through each entry, returning the next until completion when it returns undefined:</p>
                 <code>while(jaylist.next()) {...}</code>
             </section>
