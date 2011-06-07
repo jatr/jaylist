@@ -285,6 +285,15 @@ code {
     font-style: italic;
 }
 
+#destruction h3, #destruction p, 
+#information h3, #information p, 
+#iteration h3, #iteration p,
+#creation h3, #creation p, 
+#assignment h3, #assignment p, 
+#retrieval h3, #retrieval p {
+    margin-left: 2px;
+}
+
 #destruction, #information, #iteration {
     float: right;
     margin-right: 70px;
@@ -466,7 +475,6 @@ code {
     margin-top: 5px;
     margin-left: -15px;
 }
- 
 
 
 .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
