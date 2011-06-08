@@ -389,6 +389,12 @@ code {
 	-moz-box-shadow: -1px 1px 1px rgba(0,0,0,0.55);
     -khtml-box-shadow: -1px 1px 1px rgba(0,0,0,0.55);
     -webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.55);
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
 	z-index: 100;
 }
 
