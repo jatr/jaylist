@@ -150,7 +150,8 @@
                 <p>Iterate through each entry, calling callback with parameter 'key':</p>
                 <code>jaylist.each(function(key){somefunc(key);});</code>
                 <p>Iterate through each entry, returning the next until completion when it returns undefined:</p>
-                <code>while(jaylist.next()) {...}</code>
+                <code>var item = jaylist.next();</code>
+                <code>while(item) {...}</code>
             </section>
         </div>
 	</div>
