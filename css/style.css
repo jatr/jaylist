@@ -242,7 +242,7 @@ code {
 
 #api {
     width: 850px;
-    height: 820px;
+    height: 860px;
     margin-top: 284px;
     margin-right: auto;
     margin-left: auto;
@@ -304,11 +304,11 @@ code {
 }
 
 #information {
-    margin-top: -315px;
+    margin-top: -240px;
 }
 
 #iteration {
-    margin-top: -190px;
+    margin-top: -125px;
 }
 
 #social {
